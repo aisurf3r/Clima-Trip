@@ -193,7 +193,7 @@ bun run build
 
 El build se genera en `dist/` y se puede desplegar en cualquier hosting estático: **Vercel**, **Netlify**, **Cloudflare Pages**, **GitHub Pages**, etc.
 
-Si usas Lovable, basta con pulsar **Publish** en la esquina superior derecha del editor.
+*****Codigo privado*****
 
 ---
 
