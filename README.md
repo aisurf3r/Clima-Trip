@@ -86,30 +86,6 @@
 
 > Todas las APIs son **gratuitas y sin clave**, ideales para prototipado y producción ligera.
 
----
-
-## 🧪 Testing
-
-```bash
-bun run test          # Ejecuta todos los tests una vez
-bun run test:watch    # Modo watch para desarrollo
-```
-
-Los tests viven en `src/test/` y usan `Vitest` + `@testing-library/react`.
-
----
-
-## 📦 Build y despliegue
-
-```bash
-bun run build
-```
-
-El build se genera en `dist/` y se puede desplegar en cualquier hosting estático: **Vercel**, **Netlify**, **Cloudflare Pages**, **GitHub Pages**, etc.
-
-*****Codigo privado*****
-
----
 
 
 <div align="center">
