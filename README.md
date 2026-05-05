@@ -55,42 +55,6 @@
 
 ---
 
-## 🚀 Inicio rápido
-
-### Requisitos
-
-- **Node.js** ≥ 18 (recomendado 20+)
-- **bun**, **npm** o **pnpm**
-
-### Instalación
-
-```bash
-# 1. Clona el repositorio
-git clone <https://github.com/aisurf3r/Clima-Trip>
-cd climatrip
-
-# 2. Instala las dependencias
-bun install        # o: npm install
-
-# 3. Arranca el servidor de desarrollo
-bun run dev        # o: npm run dev
-```
-
-La app estará disponible en [http://localhost:8080](http://localhost:8080).
-
-### Scripts disponibles
-
-| Comando             | Descripción                                       |
-| ------------------- | ------------------------------------------------- |
-| `bun run dev`       | Servidor de desarrollo con HMR                    |
-| `bun run build`     | Build de producción optimizado                    |
-| `bun run build:dev` | Build en modo desarrollo (sin minificar)          |
-| `bun run preview`   | Sirve el build de producción localmente           |
-| `bun run lint`      | Ejecuta ESLint sobre todo el proyecto             |
-| `bun run test`      | Ejecuta la suite de tests con Vitest              |
-| `bun run test:watch`| Tests en modo *watch*                             |
-
----
 
 ## 🧱 Stack técnico
 
@@ -110,56 +74,6 @@ La app estará disponible en [http://localhost:8080](http://localhost:8080).
 
 ---
 
-## 📁 Estructura del proyecto
-
-```
-src/
-├── components/
-│   ├── ui/                    # shadcn/ui components
-│   ├── WeatherDashboard.tsx   # Vista principal del clima
-│   ├── WeatherScene.tsx       # Fondo animado por condición
-│   ├── HourlyForecast.tsx     # Pronóstico horario
-│   ├── DailyForecast.tsx      # Pronóstico semanal
-│   ├── TripPlanner.tsx        # Planificador multi-destino
-│   ├── CitySearch.tsx         # Buscador con autocompletado
-│   ├── FavoritesBar.tsx       # Acceso rápido a favoritos
-│   ├── MetricTile.tsx         # Tarjeta de métrica
-│   └── WeatherIcon.tsx        # Icono dinámico día/noche
-├── hooks/
-│   ├── use-drag-scroll.ts     # Scroll horizontal con wheel-hijack
-│   ├── use-local-storage.ts   # Persistencia tipada
-│   └── use-theme.ts           # Gestión de tema
-├── lib/
-│   ├── weather-api.ts         # Cliente Open-Meteo + Nominatim
-│   ├── trip-insights.ts       # Motor de recomendaciones
-│   └── utils.ts               # Utilidades (cn, etc.)
-├── pages/
-│   ├── Index.tsx              # Página principal
-│   └── NotFound.tsx           # 404
-├── App.tsx
-├── main.tsx
-└── index.css                  # Design tokens (HSL)
-```
-
----
-
-## 🎨 Sistema de diseño
-
-Todos los colores se definen como **tokens HSL semánticos** en `src/index.css` y se exponen vía `tailwind.config.ts`. Nunca se usan colores literales (`text-white`, `bg-black`) en componentes — siempre `text-foreground`, `bg-background`, `text-primary`, etc.
-
-```css
-:root {
-  --background: 222 47% 7%;
-  --foreground: 210 40% 98%;
-  --primary: 199 89% 60%;
-  --primary-glow: 199 100% 75%;
-  /* … */
-}
-```
-
-Esto garantiza consistencia, soporte limpio para temas y un único punto de cambio para rediseños globales.
-
----
 
 ## 🌐 APIs utilizadas
 
